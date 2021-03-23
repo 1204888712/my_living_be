@@ -1,0 +1,23 @@
+{
+  "name": "express-mylive",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./bin/www",
+    "start": "pm2 start ./bin/www --name=express_living",
+    "restart": "pm2 restart ./bin/www --name=express_living",
+    "stop": "pm2 stop express_living"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "pm2": "^4.5.5"
+  }
+}
